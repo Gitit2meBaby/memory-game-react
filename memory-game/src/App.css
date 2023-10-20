@@ -1,0 +1,83 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4vw;
+  padding: 0rem 1vw;
+  color: rgb(74, 74, 192);
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1rem;
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+}
+
+.card {
+  width: 100px;
+  height: 100px
+}
+
+.card img {
+  height: 100px;
+  width: 100px;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.gameover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transform: translate(-50% -50%);
+  border-radius: .5rem;
+  width: 30vw;
+  height: 20vh;
+  background-color: white;
+  box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.7);
+}
+
+.gameover h2 {
+  margin: 0;
+  color: rgb(74, 74, 192);
+}
+
+.gameover h3 {
+  margin: 0;
+  font-size: 2rem;
+  padding: 0.2rem;
+}
+
+button {
+  border: 2px solid rgb(74, 74, 192);
+  background-color: transparent;
+  color: rgb(74, 74, 192);
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
